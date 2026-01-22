@@ -1,3 +1,4 @@
+import Header from "./components/Header"
 import MovieCard from "./components/MovieCard"
 
 function App() {
@@ -22,8 +23,9 @@ function App() {
   
   return (
     <>
+    <Header name="Horror Movies list" />
     <section>
-      <h1>Horror movies</h1>
+      <h2>Horror movies</h2>
       {movieArray.map((movie, index) => (
         <MovieCard name={movie.name} year={movie.year} director={movie.director} key={index} />
       ))}
