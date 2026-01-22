@@ -23,6 +23,7 @@ function App() {
   
   return (
     <>
+    <div className="container">
     <Header name="Horror Movies list" />
     <section>
       <h2>Horror movies</h2>
@@ -30,7 +31,7 @@ function App() {
         <MovieCard name={movie.name} year={movie.year} director={movie.director} key={index} />
       ))}
     </section>
-     
+     </div>
     </>
   )
 }

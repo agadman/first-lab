@@ -1,4 +1,10 @@
 header { 
     text-align: center;
     padding: 2.5rem 0;
+    border-bottom: 2px solid red;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }

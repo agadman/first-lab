@@ -3,3 +3,14 @@
     padding: 0; 
     box-sizing: border-box; 
 }
+
+body {
+  background: #0b0b0f;
+  color: #f3f3f3;
+  line-height: 1.5;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
