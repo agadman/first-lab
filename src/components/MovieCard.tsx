@@ -1,5 +1,7 @@
+// importerar css filen för komponenten
 import './MovieCard.css'
 
+// skapar ett interface för props som komponenten tar emot
 interface MovieCardProps {
   name: string;
   year: number;
@@ -7,6 +9,7 @@ interface MovieCardProps {
   isBasedOnTrueStory: boolean;
 }
 
+// skapar en komponent som tar emot props enligt MovieCardProps interfacet
 function MovieCard ({name, year, director, isBasedOnTrueStory} : MovieCardProps){
   return (
     <article className="movie-card">
