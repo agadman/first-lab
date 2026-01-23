@@ -1,4 +1,5 @@
 import "./Header.css"
+import Hero from "./Hero";
 
 interface HeaderProps { 
     name: string;
@@ -6,9 +7,12 @@ interface HeaderProps {
 
 function Header ({ name }: HeaderProps) {
   return (
-    <header>
-        <h1>{name}</h1>
-    </header>
+    <>
+      <header>
+          <h1>{name}</h1>
+      </header>
+      <Hero />
+    </>
   )
 }
 

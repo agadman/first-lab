@@ -12,7 +12,7 @@ function Footer({ course, university, year, creator }: FooterProps) {
     <footer>
         <p className="course">{course}</p>
         <p className="university">{university}, VT{year}</p>
-        <p className="creator">Av: {creator}</p>
+        <p className="creator">Webpage created by: {creator}</p>
     </footer>
   )
 }
