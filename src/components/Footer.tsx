@@ -10,9 +10,9 @@ interface FooterProps {
 function Footer({ course, university, year, creator }: FooterProps) {
   return (
     <footer>
-        <p>{course}</p>
-        <p>{university}, VT{year}</p>
-        <p>Av: {creator}</p>
+        <p className="course">{course}</p>
+        <p className="university">{university}, VT{year}</p>
+        <p className="creator">Av: {creator}</p>
     </footer>
   )
 }
