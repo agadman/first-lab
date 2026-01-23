@@ -1,3 +1,4 @@
+import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import MovieCard from "./components/MovieCard"
@@ -25,14 +26,15 @@ function App() {
   return (
     <>
     <div className="container">
-    <Header name="Horror Movies list" />
-    <Hero />
-    <section>
-      <h2>Horror movies</h2>
-      {movieArray.map((movie, index) => (
-        <MovieCard name={movie.name} year={movie.year} director={movie.director} key={index} />
-      ))}
-    </section>
+      <Header name="Horror Movies list" />
+      <Hero />
+      <section>
+        <h2>Horror movies</h2>
+        {movieArray.map((movie, index) => (
+          <MovieCard name={movie.name} year={movie.year} director={movie.director} key={index} />
+        ))}
+      </section>
+      <Footer />
      </div>
     </>
   )
