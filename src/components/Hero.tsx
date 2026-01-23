@@ -3,7 +3,7 @@ import './Hero.css'
 
 function Hero() {
   return (
-    <section>
+    <section className='hero'>
       <img src={heroImg} alt="Hero" />
     </section>
   )

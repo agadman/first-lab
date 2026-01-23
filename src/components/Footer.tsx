@@ -1,11 +1,18 @@
 import './Footer.css'
 
-function Footer() {
+interface FooterProps {
+  course: string;
+  university: string;
+  year: number;
+  creator: string;
+}
+
+function Footer({ course, university, year, creator }: FooterProps) {
   return (
     <footer>
-        <p>Labb 1 - Fördjupad frontendutveckling, Mittuniversitetet, VT2026</p>
-        <p>Av Annika Gadman</p>
-
+        <p>{course}</p>
+        <p>{university}, VT{year}</p>
+        <p>Av: {creator}</p>
     </footer>
   )
 }

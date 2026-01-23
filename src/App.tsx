@@ -10,7 +10,7 @@ function App() {
       <Header name="Horror Movies list" />
       <Hero />
       <MovieCardList />
-      <Footer />
+      <Footer course="Fördjupad frontendutveckling" university="Mittuniversitetet" year={2026} creator="Annika Gadman" />
      </div>
   )
 }
