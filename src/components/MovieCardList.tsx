@@ -1,4 +1,5 @@
 import MovieCard from "./MovieCard"
+import './MovieCardList.css'
 
 function MovieCardList() {
   const movieArray = [
@@ -19,11 +20,13 @@ function MovieCardList() {
     }
   ]
   return (
-    <section>
-        <h2>Horror movies</h2>
-        {movieArray.map((movie, index) => (
-          <MovieCard name={movie.name} year={movie.year} director={movie.director} key={index} />
-        ))}
+    <section className="movie-list">
+        <h2 className="movie-title">Horror movies</h2>
+        <div className="card-grid">
+            {movieArray.map((movie, index) => (
+            <MovieCard name={movie.name} year={movie.year} director={movie.director} key={index} />
+            ))}
+        </div>
     </section>
   )
 }

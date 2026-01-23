@@ -1,3 +1,5 @@
+import './MovieCard.css'
+
 interface MovieCardProps {
   name: string;
   year: string;
@@ -6,11 +8,11 @@ interface MovieCardProps {
 
 function MovieCard ({name, year, director} : MovieCardProps){
   return (
-    <section style={{backgroundColor: "red", marginBottom: "20px", width: "300px"}}>
-        <h2>{name}</h2>
-        <p>Year: {year}</p>
-        <p>Director: {director}</p>
-      </section>
+    <article className="movie-card">
+        <h3 className="movie-title">{name}</h3>
+        <p className="movie-info">Year: {year}</p>
+        <p className="movie-info">Director: {director}</p>
+      </article>
   )
 }
 
