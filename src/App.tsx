@@ -7,7 +7,7 @@ import MovieCardList from "./components/MovieCardList"
 function App() {  
   return (
     <div className="container">
-      <Header name="Horror Movies list" />
+      <Header name="Movies" />
       <Hero />
       <MovieCardList />
       <Footer course="Fördjupad frontendutveckling" university="Mittuniversitetet" year={2026} creator="Annika Gadman" />

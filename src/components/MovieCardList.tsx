@@ -21,7 +21,7 @@ function MovieCardList() {
   ]
   return (
     <section className="movie-list">
-        <h2 className="movie-title">Horror movies</h2>
+        <h2 className="movie-title">My list</h2>
         <div className="card-grid">
             {movieArray.map((movie, index) => (
             <MovieCard name={movie.name} year={movie.year} director={movie.director} key={index} />
